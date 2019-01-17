@@ -1,1 +1,27 @@
 // Navigation Styles here
+.navigation {
+	.border-bottom();
+	.nav-center {
+		//height: 60px;
+		max-width: 800px;
+		margin: 0 auto;
+		.display-flex();
+		.display-flex-center();
+		@media @mobile {
+			flex-direction: column;
+		}
+	}
+	nav {
+	}
+	a {
+		padding: 20px 10px;
+		text-decoration: none;
+		color: @shark;
+		font-size: 1.4rem;
+		transition: @nav-transition;
+		&:hover {
+			background-color: @button-bg;
+			color: @white;
+		}
+	}
+}
