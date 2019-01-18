@@ -178,18 +178,32 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  padding: 10px;
 }
 @media (max-width: 500px) {
-  .navigation .nav-center {
-    flex-direction: column;
+  .navigation .nav-center h1,
+  .navigation .nav-center nav {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .navigation nav {
+    margin: 20px 0;
   }
 }
 .navigation a {
-  padding: 20px 10px;
+  padding: 25px 10px;
   text-decoration: none;
   color: #212529;
   font-size: 1.4rem;
   transition: 0.1s;
+}
+@media (max-width: 500px) {
+  .navigation a {
+    padding: 10px 10px;
+    border-radius: 10px;
+  }
 }
 .navigation a:hover {
   background-color: #17A2B8;
